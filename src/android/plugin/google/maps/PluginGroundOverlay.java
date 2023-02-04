@@ -91,6 +91,10 @@ public class PluginGroundOverlay extends MyPlugin implements MyPluginInterface  
         if (object == null) {
           callbackContext.error("Cannot create a ground overlay");
           return;
+        } else if (self.map == null){
+          Log.d("googlemaps", "null map");
+          callbackContext.error("Cannot create a ground overlay due to empty map");
+          return;
         }
 
         AsyncLoadImage.AsyncLoadImageResult result = (AsyncLoadImage.AsyncLoadImageResult)object;
