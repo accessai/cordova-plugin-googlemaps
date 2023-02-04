@@ -18,6 +18,7 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Set;
+import android.util.Log;
 
 public class PluginGroundOverlay extends MyPlugin implements MyPluginInterface  {
 
